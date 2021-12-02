@@ -2,10 +2,92 @@
   <head>
     <meta charset="UTF-8" />
     <title>Primeira página HTML</title>
+
+    <style>
+      body {
+        background-color: #fdfdfd;
+        font-family: sans-serif;
+        margin: 0;
+      }
+
+      header {
+        padding: 20px;
+        background-color: #dd2626;
+      }
+
+      .nucleo-imagem {
+        display: block;
+        margin: auto;
+        width: 120px;
+      }
+
+      .titulo {
+        color: white;
+        text-align: center;
+      }
+
+      .conteudo {
+        margin: auto;
+        width: 86%;
+      }
+
+      .subtitulo {
+        text-align: center;
+      }
+
+      .paragrafo {
+        text-align: justify;
+      }
+
+      .acessar-instagram-botao {
+        text-decoration: none;
+        border-width: 2px;
+        border-style: solid;
+        border-color: #dd2626;
+        color: #dd2626;
+        font-weight: bold;
+        display: block;
+        margin: auto;
+        text-align: center;
+        width: 240px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+      }
+
+      .acessar-instagram-botao:hover {
+        background-color: #dd2626;
+        color: white;
+      }
+    </style>
   </head>
 
   <body>
-    <img src="nucleo.jpeg" style="width: 300px" />
-    <h1>Núcleo de Tecnologia do MTST</h1>
+    <header>
+      <img
+        class="nucleo-imagem"
+        src="https://nucleodetecnologia.com.br/assets/img/logo-nucleo.png"
+      />
+
+      <h1 class="titulo">Núcleo de Tecnologia do MTST</h1>
+    </header>
+
+    <div class="conteudo">
+      <h2 class="subtitulo">Curso de Introdução a Programação</h2>
+
+      <p class="paragrafo">
+        Tem mais computador sem desenvolvedor do que desenvolvedor sem
+        computador. Como os liberais gostam de dizer, "a conta não fecha". Eles
+        não têm solução para isso, nós sim: Paulo Freire aplicado ao ensino de
+        tecnologia e uma IDE na mão de cada Sem-Teto formando bons
+        desenvolvedores.
+      </p>
+    </div>
+
+    <a
+      class="acessar-instagram-botao"
+      href="https://www.instagram.com/tecnologia.mtst/"
+    >
+      Siga o núcleo no Instagram
+    </a>
   </body>
 </html>
